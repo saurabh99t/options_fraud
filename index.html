@@ -28,11 +28,20 @@
     box-sizing: border-box; /* Include padding in width calculation */
   }
 
-  .img-div img{
-    width: 80%;
+  @keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5%);
+    }
+}
 
-  
-  }
+  .img-div img {
+    width: 80%;
+    animation: floatAnimation 4s ease-in-out infinite; /* Adjust animation duration as needed */
+    margin-top: 20px;
+}
 
   .img-div {
     margin-top: 30px;
@@ -50,85 +59,222 @@
         flex-direction: column;
     }
   }
+
+
+
+
+
+
+  /* ------------------------------------------ */
+
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    color: white;
+    background-color: #9f2121;
+    padding: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.content {
+    margin: 0px auto;
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    /* transition: transform 0.3s, box-shadow 0.3s; */
+}
+
+.content:hover {
+    /* transform: translateY(-5px); */
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); */
+}
+
+ h2 {
+    color: #333;
+    transition: color 0.3s;
+}
+
+ h2:hover {
+    color: #e74c3c;
+}
+
+ul {
+    list-style-type: disc;
+    /* margin-left: 20px; */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+ul a{
+    text-decoration: none;
+    color: darkblue;
+}
+
+
+
+
+
+/* Add animation styles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-20px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+/* Apply animations to content sections */
+.content {
+    /* ...previous styles... */
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1, h2 {
+    /* ...previous styles... */
+    animation: slideIn 0.5s ease-in-out;
+}
+/* Add more styling as needed */
+
+
+
+     /* ...previous styles... */
+
+/* Add animation styles and more styling as needed */
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+    .content {
+        border-radius: 0;
+        box-shadow: none;
+    }
+    ul {
+        margin-left: 10px;
+    }
+}
+
+
+
+
+
+
+
 </style>
 </head>
 <body>
-    <header>
-        <h1>Stay Secure While Dating Online</h1>
-    </header>
+  <header>
+    <h1>Secure and Fraud Prevention</h1>
+</header>
 
 <div class="outer-container">
   <div class="inner-section">
   
  
     <section class="content">
-        <h2>Protect Yourself from Fraud</h2>
-        <p>Online dating can be fun, but it's important to stay cautious:</p>
-        <ul>
-            <li>Never share personal or financial information with anyone you've just met online.</li>
-            <li>Be wary of individuals who rush the relationship or make extravagant promises.</li>
-            <li>Use reputable dating platforms that prioritize user safety.</li>
-            <li>Trust your instincts; if something feels off, it probably is.</li>
-        </ul>
-        <!-- ... more content ... -->
-
-        <h2>Recognize Common Scams</h2>
-        <p>Be alert for common online dating scams:</p>
-        <ul>
-            <li>Requests for money or financial assistance.</li>
-            <li>Profiles with overly attractive photos that seem too good to be true.</li>
-            <li>Individuals who avoid video calls or in-person meetings.</li>
-            <li>Stories that are inconsistent or don't add up.</li>
-        </ul>
-        <h2>Stay Safe During Meetups</h2>
-        <p>If you decide to meet in person, prioritize safety:</p>
-        <ul>
-            <li>Meet in public places with good lighting.</li>
-            <li>Inform a friend or family member about your plans.</li>
-            <li>Arrange your own transportation.</li>
-            <li>Trust your instincts during the meetup.</li>
-        </ul>
-
-    <!-- ...more content... -->
-
-
- 
-        <!-- ...previous content... -->
-    
-        <h2>Tips for Secure Online Communication</h2>
-        <p>When communicating online, follow these guidelines:</p>
-        <ul>
-            <li>Use the dating platform's messaging system initially.</li>
-            <li>Avoid sharing personal contact information too soon.</li>
-            <li>Be cautious when clicking on links or downloading files from unknown sources.</li>
-            <li>Report and block any suspicious or offensive behavior.</li>
-        </ul>
-    
-        <h2>Creating a Strong Password</h2>
-        <p>Protect your account with a strong password:</p>
-        <ul>
-            <li>Use a combination of upper and lower case letters, numbers, and symbols.</li>
-            <li>Avoid using easily guessable information like birthdays or names.</li>
-            <li>Don't reuse passwords across multiple accounts.</li>
-            <li>Consider using a password manager to keep your passwords secure.</li>
-        </ul>
-    
-        <h2>Resources for Online Safety</h2>
-        <p>Stay informed about online safety by exploring these resources:</p>
-        <ul>
-            <li><a href="https://www.consumer.ftc.gov/articles/0004-online-dating-scams">FTC Online Dating Scam Information</a></li>
-            <li><a href="https://www.staysafeonline.org/">National Cyber Security Alliance</a></li>
-            <li><a href="https://www.getsafeonline.org/">Get Safe Online</a></li>
-        </ul>
-    </section>
+      <h2>Protect Yourself from Recruitment Scams</h2>
+      <p>Online job searching can be exciting, but it's important to stay cautious:</p>
+      <ul>
+          <li>Never share personal or financial information with anyone you've just met online.</li>
+          <li>Be wary of job offers that promise unrealistic salaries or benefits.</li>
+          <li>Use reputable job search platforms that prioritize user safety.</li>
+          <li>Verify the legitimacy of job postings and companies before providing information.</li>
+      </ul>
+      <h2>Recognize Common Recruitment Scams</h2>
+      <p>Be alert for common online recruitment scams:</p>
+      <ul>
+          <li>Requests for money or financial assistance as part of the job application process.</li>
+          <li>Job offers without an interview or with minimal qualifications.</li>
+          <li>Companies asking for payment for background checks or training.</li>
+          <li>Emails or communications with poor grammar and suspicious email addresses.</li>
+      </ul>
+      <h2>Stay Safe During Job Interviews</h2>
+      <p>If you're invited for an interview, prioritize safety:</p>
+      <ul>
+          <li>Research the company and interviewer before the interview.</li>
+          <li>Meet in well-lit and public places for in-person interviews.</li>
+          <li>Bring a friend or family member to accompany you if possible.</li>
+          <li>Trust your instincts; if something feels off, it probably is.</li>
+      </ul>
+      <h2>Online Job Offer Considerations</h2>
+      <p>When considering job offers received online:</p>
+      <ul>
+          <li>Thoroughly review the job description and responsibilities.</li>
+          <li>Check for contact information, company website, and proper email addresses.</li>
+          <li>Beware of jobs that require an upfront payment or ask for financial details.</li>
+          <li>Trust established companies with a reliable online presence.</li>
+      </ul>
+      <h2>Report Suspicious Activity</h2>
+      <p>If you come across any suspicious job listings or communication:</p>
+      <ul>
+          <li>Contact the job search platform to report the suspicious posting.</li>
+          <li>Block and report any users who exhibit fraudulent behavior.</li>
+          <li>Share your experience with friends or family to raise awareness.</li>
+          <li>If you believe you've encountered a scam, report it to local authorities.</li>
+      </ul>
+  </section>
 
   </div>
   <div class="inner-section">
     <div class="img-div">
-  <img src="./couple.png" alt="">
+  <img src="./favpng_office-illustration.png" alt="">
 </div>
   </div>
 </div>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
