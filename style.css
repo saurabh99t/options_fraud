@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    color: white;
+    background-color: #9f2121;
+    padding: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.content {
+    margin: 0px auto;
+    padding: 20px;
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    /* transition: transform 0.3s, box-shadow 0.3s; */
+}
+
+.content:hover {
+    /* transform: translateY(-5px); */
+    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); */
+}
+
+ h2 {
+    color: #333;
+    transition: color 0.3s;
+}
+
+ h2:hover {
+    color: #e74c3c;
+}
+
+ul {
+    list-style-type: disc;
+    /* margin-left: 20px; */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+ul a{
+    text-decoration: none;
+    color: darkblue;
+}
+
+
+
+
+
+/* Add animation styles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-20px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Apply animations to content sections */
+.content {
+    /* ...previous styles... */
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1, h2 {
+    /* ...previous styles... */
+    animation: slideIn 0.5s ease-in-out;
+}
+/* Add more styling as needed */
+
+
+
+     /* ...previous styles... */
+
+/* Add animation styles and more styling as needed */
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+    .content {
+        border-radius: 0;
+        box-shadow: none;
+    }
+    ul {
+        margin-left: 10px;
+    }
+}
